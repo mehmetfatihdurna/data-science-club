@@ -1,0 +1,16 @@
+import numpy as np
+
+#Numpy dizileri yalnızca tek tür elemanlar içerir
+#Numpy listesi oluşturalım
+np_height = np.array([1.73, 1.68, 1.71, 1.89, 1.79])
+np_weight = np.array([65.4, 59.2, 63.6, 88.4, 68.7])
+
+#Numpy dizileriyle işlem yapma
+# bmi hesaplama
+# bu işlem tek tek tüm elemanları karşılıklı hesaplar
+bmies = np_weight / np_height ** 2
+
+#Numpy ile 2D arraylar oluşturma
+
+array = np.array([[1.73, 1.68, 1.71, 1.89, 1.79],[65.4, 59.2, 63.6, 88.4, 68.7]])
+
