@@ -8,8 +8,10 @@ pop = [2.5191, 3.692, 5.263, 6.972]
 plt.plot(year, pop)
 plt.show()
 
-#Scatter plot için
-plt.scatter(year, pop)
+#Scatter plot için 
+plt.scatter(year, pop, s=, alpha=, c=) # s size demek noktaların büyüklüğünü değere göre değiştirebilirsiniz.
+#alpha özelliği opaklığı ayarlar
+#c özelliği sözlük alır. Tablodaki değerlere renk atar.
 plt.show()
 
 # x eksenin ölçeklendirmesini logoritmik yapma
@@ -32,6 +34,12 @@ plt.title('World Population Projections')
 
 # y ekseninin gözükmesini istediğimiz değerlerini yazıyoruz,
 plt.yticks([0,2,4,6,8,10],['0','2B','4B','6B','8B','10B'])
+
+
+#plt.text() x 15 y 20 olan değere India diyoruz.
+plt.text(15, 20, 'India')
+
+plt.grid(True) #görünmesini sağlıyoruz
 
 
 
