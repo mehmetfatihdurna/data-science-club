@@ -66,3 +66,13 @@ np_city = np.row_stack((height, weight))
 
 #İki listeyi kolon olarak yapıştırır.
 np_city = np.column_stack((height, weight))
+
+
+
+#Mantıksal operatörleri kullanma
+#And operatörünü kullanma
+np.logical_and(bmi > 21, bmi < 22) #Bu bize true false değerler döndürür.
+bmi[np.logical_and(bmi > 21, bmi < 22)] #21 büyük 22den küçük değerleri elde edebiliriz.
+
+np.logical_not()
+np.logical_or()
