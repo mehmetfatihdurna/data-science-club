@@ -32,3 +32,9 @@ brics.loc[:,['country','capital']]
 brics.iloc[[1]] # 1 indeksli satırı getirir.
 brics.iloc[:, [0,1]] #country ve capital sütunlarını getirir.
 
+#Filtering pandas Dataframe
+import numpy as np
+print(brics[np.logical_and(brics['area'] > 8, brics['area'] < 10)])
+
+
+

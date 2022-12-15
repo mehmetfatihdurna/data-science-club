@@ -76,3 +76,17 @@ bmi[np.logical_and(bmi > 21, bmi < 22)] #21 büyük 22den küçük değerleri el
 
 np.logical_not()
 np.logical_or()
+
+
+
+#Random generators
+np.random.seed(123)
+np.random.rand()
+
+#basit uygulama
+np.random.seed(123) #istediğimiz değer yazabilriz
+coin = np.random.randint(0,2) #Randomly generate 0 or 1
+if coin == 0:
+    print('yazı')
+else:
+    print('tura')
