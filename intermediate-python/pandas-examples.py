@@ -37,4 +37,37 @@ import numpy as np
 print(brics[np.logical_and(brics['area'] > 8, brics['area'] < 10)])
 
 
+# Iterating over data
+import pandas as pd
+result = []
+#chunksize ile alacağımız verinin boyutunu belirtiyoruz
+for chunk in pd.read_csv('data.csv', chunksize=1000):
+    result.append(sum(chunk['x']))
+total = sum(result)
+print(total)
+
+
+
+
+
+
+# Initialize an empty dictionary: counts_dict
+counts_dict = {}
+
+# Iterate over the file chunk by chunk
+for chunk in read_csv('tweets.csv', chunksize=10):
+
+    # Iterate over the column in DataFrame
+    for entry in chunk['lang']:
+        if entry in counts_dict.keys():
+            counts_dict[entry] += 1
+        else:
+            counts_dict[entry] = 1
+
+# Print the populated dictionary
+print(counts_dict)
+
+
+
+
 
