@@ -18,7 +18,7 @@ df = pd.DataFrame(rs.fetchall())
 #Fetchmany istenilen sayıda satırı aktarır.
 df = pd.DataFrame(rs.fetchmany(size=5))
 
-#Sütun adlarını dataframe'e aktarır	
+#Sütun adlarını dataframe'e aktarır
 df.columns = rs.keys()
 
 #Yukarıdaki kodların yerine kullanılabilecek kod bloğu tek satırda halledebiliyoruz.
